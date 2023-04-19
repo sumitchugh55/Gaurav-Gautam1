@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 'navbar navbar navbar'
+            'section section aside'
+            'footer footer aside';
+            grid-gap: 1rem;
+        }
+        .item{
+            
+          
+            
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #navbar ul li{
+            display: inline-block;
+           margin: 33px 27px;
+        }
+        #navbar ul{
+            text-align: center;
+
+        }
+        #navbar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover{
+            background-color: yellow;
+            border: 10px double red;
+            color: black;
+            border-radius: 20px ;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+     img{
+        border-radius: 127px;
+        margin-left: 250px;
+        animation: sumit1 5s 3;
+        animation-delay: 5s;
+     }
+     img:hover{
+        outline: 3px solid red;
+        outline-offset: 15px;
+     }
+     @keyframes sumit1 {
+        from{
+           
+        }
+        to{
+          
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+        
+     }
+        @media (max-width:700px) {
+            .container{
+
+display: grid;
+grid-template-areas: 'navbar navbar navbar'
+'section section section'
+'aside aside aside'
+'footer footer footer'
+;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">ContactUs</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Address</a></li>
+                <li><a href="#">ABout Us</a></li>
+            </ul>
+        </div>
+        <div id="section" class="item">
+          
+            
+            <img src="https://source.unsplash.com/500x200?nature,water" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam pariatur suscipit illum nobis totam, soluta, dignissimos animi nisi omnis quasi vel earum molestias quas voluptatem cum sint, laboriosam mollitia asperiores.</p>
+        </div>
+        <div id="aside" class="item">
+            <h1>Sumit Chugh</h1>
+        </div>
+        <div id="footer" class="item">
+            <footer>
+                Sumit chugh &copy;
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
